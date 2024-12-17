@@ -1,0 +1,385 @@
+:root{
+    --gold_col:#ffe100
+}
+*{
+    margin: 0px; 
+    padding: 0px;
+}
+/* Task4Compo1 */ 
+.Task4Compo1{
+    height: 100px;
+    width: 90%;
+    padding: 0px 5%;
+    display: flex;justify-content: space-between;align-items: center;
+    background-color: #000000;
+}
+.Task4Compo1_logo{
+    height: 100%;
+    width: 100px;
+}
+.Task4Compo1_logo img{
+    height: 100%;
+    width: 100%;
+}
+.Task4Compo1_name{
+    font-size: 50px;
+    font-weight: bold;
+    color: var(--gold_col);
+}
+.Task4Compo1_profile{
+    padding-top: 10px;
+    font-size: 30px;
+    color: #fff;
+}
+
+/* Task4Compo2 */
+.Task4Compo2{
+    height: 50px;
+    width: 90%;
+    padding: 0px 5%;
+    display: flex;justify-content: space-between;align-items: center;
+    background-color: var(--gold_col);
+    position: relative;
+}
+.Task4Compo2_icon{
+    font-size: 20px;
+    cursor: pointer;
+}
+.Task4Compo2_search{
+    height: 30px;
+    width: 260px;
+    padding: 0px 10px;
+    background-color: rgb(255, 255, 255);
+    display: flex;justify-content: space-between;align-items: center;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.Task4Compo2_search_input{
+    height: 100%;
+    width: 230px;
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--gold_col);
+}
+input:focus{
+    outline: none;
+}
+
+.Task4Compo2_list1{
+    height: 494px;
+    width: 150px;
+    padding: 50px 10px 10px 10px;
+    background-color: #fefdb3;
+    /* position: absolute;
+    top: -50px;
+    left: 0px; */
+    z-index: 3;
+    display: flex;justify-content: start;align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    transition: all 2s;
+}
+.Task4Compo2_list1_but{
+    height: fit-content;
+    width: 70px;
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: var(--gold_col);
+    color: rgb(34, 57, 54);
+    border: 2px solid var(--gold_col);
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 5px yellow;
+    transition: all .8s;
+}
+.Task4Compo2_list1_but:hover{
+    background-color: #fff;
+    color: var(--gold_col);
+    
+}
+/* Task4Compo2_1 */
+.Task4Compo2_1{
+    width: 100%;
+    display: flex;justify-content: center;align-items: start;
+}
+
+
+/* Task4Compo3 */
+.Task4Compo3{
+    height: 550px;
+    width: 90%;
+    overflow: auto;
+    scrollbar-width: none;
+    border: 2px solid black;
+}
+
+.slick-prev, .slick-next{
+    height: fit-content;
+    width: fit-content;
+    background-color: rgb(0, 0, 0) !important;
+    color: rgb(254, 0, 0) !important;
+    padding: 5px;
+    
+}
+.slick-prev{
+    margin-left: 25px;
+    border-radius: 0px 15px 15px 0px;
+    z-index: 2;
+}
+.slick-next{
+    margin-right: 25px;
+    border-radius: 15px 0px 0px 15px;
+    z-index: 2;
+}
+
+/* Task4Compo4 */
+.Task4Compo4{
+    margin-top: 50px;
+    height: fit-content;
+    width: 94%;
+    padding: 3%;
+    display: flex;justify-content: space-around;align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    background-color: #edeca4;
+}
+.Task4Compo4_card{
+    min-height: 300px;
+    max-height: fit-content;
+    width: 200px;
+    padding: 15px 5px 5px 5px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    border-radius: 10px;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    transition: all 1s;
+}
+.Task4Compo4_card:hover{
+    box-shadow: 0 0 10px black;
+}
+.Task4Compo4_card_liked{
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    /* background-color: red; */
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 2;
+}
+.Task4Compo4_card_img{
+    height: 200px;
+    width: 100%;
+    display: flex;justify-content: center;
+    background-color: #ffffff;
+    margin-bottom: 10px;
+}
+.Task4Compo4_card_img img{
+    height: 100%;
+    max-width: 100%;
+    min-width: fit-content;
+    transition: all 1s;
+}
+.Task4Compo4_card:hover .Task4Compo4_card_img img{
+    transform: scale(1.08);
+}
+hr{
+    height: 1px;
+    background-color: #000000;
+}
+.Task4Compo4_card_name{
+    /* color: var(--gold_col); */
+    text-align: center;
+    font-size: 20px;
+}
+.Task4Compo4_card_div{
+    display: flex;justify-content: space-between;align-items: center;
+    padding: 0px 10px;
+}
+.Task4Compo4_card_cost{
+    color: red;
+}
+.Task4Compo4_card_rating{
+    width: fit-content;
+    padding: 1px;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 5px;
+    background-color: rgb(3, 206, 3);
+    color: white;
+    cursor: pointer;
+}
+.Task4Compo4_card_cart{
+    margin-top: 10px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 1s;
+}
+/* .Task4Compo4_card_cart:hover{
+    box-shadow: 0 0 5px red;
+} */
+.Task4Compo4_card_cart_add{
+    background-color: orange;
+    border: 2px solid orange;
+    color:white ;
+    border-radius: 10px;
+    transition: all 1s;
+
+}
+.Task4Compo4_card_cart_add:hover{
+    box-shadow: 0 0 5px red;
+}
+.Task4Compo4_card_cart_remove{
+    background-color: white;
+    border: 2px solid orange;
+    color:orange ;
+    border-radius: 10px;
+    transition: all 1s;
+
+}
+.Task4Compo4_card_cart_remove:hover{
+    box-shadow: 0 -0px 4px rgb(255, 0, 0);
+}
+ 
+/* Task4Compo5 */
+
+.Task4Compo5{
+    width: 99.6%;
+    max-height: fit-content;
+    min-height: 200px;
+    border: 2px solid red;
+}
+
+.Task4Compo5_heading{
+    font-size: 40px;
+    text-decoration: underline;
+    color: var(--gold_col);
+    text-align: center;
+}
+
+.Task4Compo5_cart_items_no{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+
+/* Task4Compo3_Slide */
+.Task4Compo3_Slide{
+    height: 400px;
+    width: 100%;
+    display: flex;justify-content: center;align-items: center;
+}
+.Task4Compo3_Slide img{
+    max-height: 100%;
+    min-height: fit-content;
+    min-width: fit-content;
+    max-width: 100%;
+}
+
+
+.Task4Compo2_list1_but1{
+    height: fit-content;
+    width: 70px;
+    padding: 5px 10px;
+    margin: 5px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgb(0, 179, 255);
+    color: rgb(34, 57, 54);
+    border: 2px solid blue;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgb(0, 102, 255);
+    transition: all .8s;
+}
+.Task4Compo2_list1_but1:hover{
+    border: 2px solid  rgb(0, 179, 255);
+    color: blue;
+    background-color: #fff;
+}
+label{
+    /* color: red; */
+    font-size: 16px;
+    font-weight: 700;
+}
+label:hover{
+    color: blue;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* animation */
+
+
+.Rx3d{
+    height: 30px;width: 200px;
+    margin-top: 10px;
+    position: absolute;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  #dimension1 {
+    height: 30px;width: 200px;
+    background: #fa4343;
+    display: flex;justify-content: center;align-items: center;
+    font-size: 20px;
+    border-radius: 4px;
+    transform: rotateX(-80deg);
+    position: absolute;
+    bottom: 60%;
+  
+    transition: transform 0.7s ease-in, bottom 1s ease-in-out .1s;
+  }
+  #dimension2{
+    height: 30px;width: 200px;
+    background: #31fa26;
+    display: flex;justify-content: center;align-items: center;
+    font-size: 20px;
+    border-radius: 4px;
+    position: absolute;
+    top: 0%;
+    transform: rotateX(0deg);
+    transition: transform .7s ease-in ,top 1s ease-in-out .1s;
+  }
+  #dimension3{
+    height: 30px;width: 200px;
+    background: #fa4343;
+    display: flex;justify-content: center;align-items: center;
+    font-size: 20px;
+    border-radius: 4px;
+    transform: rotateX(0deg);
+    position: absolute;
+    bottom: 0%;
+    transition: transform 0.7s ease-in, bottom 1s ease-in-out .1s;
+  }
+  #dimension4{
+    height: 30px;width: 200px;
+    background: #31fa26;
+    display: flex;justify-content: center;align-items: center;
+    font-size: 20px;
+    border-radius: 4px;
+    position: absolute;
+    top: 60%;
+    transform: rotateX(-90deg);
+    transition: transform .7s ease-in ,top 1s ease-in-out .1s;
+  }
